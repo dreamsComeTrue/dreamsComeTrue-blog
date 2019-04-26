@@ -1,0 +1,16 @@
+version: '3'
+services:
+  python-producer:
+    build: producer/.
+    environment: 
+      KAFKA_BROKER_URL: kafka:9092
+
+  python-consumer:
+    build: consumer/.
+    environment: 
+      KAFKA_BROKER_URL: kafka:9092
+
+networks:
+  default:
+    external:
+      name: kafka-network

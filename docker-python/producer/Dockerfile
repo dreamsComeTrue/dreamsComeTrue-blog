@@ -21,6 +21,6 @@ RUN pip install -r requirements.txt
 
 # Python environment
 
-ADD main_app.py /app/
+ADD producer.py /app/
 
-CMD python ./app/main_app.py
+CMD python3 ./app/producer.py
