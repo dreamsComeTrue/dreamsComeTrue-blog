@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="{% static 'lang-logo.png'%}">
+    </a>
+    <h1>Dreams Come True</h1>
+    <p>my private space on the web</p>
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-success text-center" role="alert">
+    I'm happy for your visit!
+  </div>
+  <hr>
+</div>
+{% endblock %}
