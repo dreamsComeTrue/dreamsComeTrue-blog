@@ -10,7 +10,6 @@ def index(request):
 
 
 def db(request):
-
     greeting = Greeting()
     greeting.save()
 
