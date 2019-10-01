@@ -16,6 +16,7 @@ import personal_blog.views
 
 urlpatterns = [
     path("", personal_blog.views.index, name="index"),
+    path("godot/", personal_blog.views.godot, name="godot"),
     path("db/", personal_blog.views.db, name="db"),
     path("admin/", admin.site.urls),
 ]
